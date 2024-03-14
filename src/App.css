@@ -1,0 +1,40 @@
+.container{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin: 0 auto;
+  flex-direction: column;
+  background-color: hsl(217, 19%, 24%);
+  width: 500px;
+  color: white;
+  padding: 20px;
+  border-radius: 11px;
+  position: relative;
+  height: 300px;
+}
+.advice{
+  font-weight: 800;
+  font-size: 28px;
+}
+.image{
+  height: 20px;
+  background-image: url(./images/pattern-divider-desktop.svg);
+  width: 100%;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+@media screen and (max-width :767px) {
+  .container{
+    width: 350px;
+  }
+  .image{
+    height: 20px;
+    background-image: url(./images/pattern-divider-mobile.svg);
+    width: 100%;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+}
